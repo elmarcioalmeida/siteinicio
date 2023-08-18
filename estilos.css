@@ -1,0 +1,120 @@
+/* Estilos gerais */
+/*Resultado até aqui obtido usando o Chat GPT para avançar -  estou apenas começando os estudos. Não copiei e colei, busdquei entender cada passo */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #c4c2c2b1;
+}
+
+.fas { /*ícone baixado no Font Awesome*/
+    color: #ececec; /* Substitua a cor pelo valor desejado */
+}
+
+/* Estilos do cabeçalho (navegação) */
+nav {
+    list-style-type: none;
+    background-color: #000105;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7b59cc;
+}
+
+/* Ícones para os links */
+nav a::before {    
+    font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
+    margin-right: 5px;
+}
+
+/* Estilos do menu lateral */
+.sidebar {
+    background-color: #7a80ad;
+    color: #fff;
+    padding: 10px;
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    /* Remova a propriedade "position: fixed" para que o menu lateral não fique fixo */
+    top: 50px; /* Ajuste para compensar a altura do menu superior */
+    left: 0;
+    width: 180px; /* Defina a largura do menu lateral */
+    margin-top: 0px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-top: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #7b59cc;
+}
+
+/* Layout com menu lateral e conteúdo */
+.container {
+    display:flex; /* Utilizando flexbox para posicionar o menu lateral e o conteúdo lado a lado */
+    gap: 20px;
+    padding-right: 10px; 
+    margin-top: 40px;
+}
+
+.column {
+    flex: 1; /* Ocupando a mesma largura disponível para cada coluna */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (
+    max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alterando a direção do flexbox para uma coluna em telas menores */
+    }
+
+    /* Adicione margens para o conteúdo para melhor espaçamento */
+    .content {
+        margin-top: 20px;
+    }
+}
+.rodape {
+    text-align: center;
+    background-color: #000105;
+    color: white;
+}
